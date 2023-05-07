@@ -1,0 +1,62 @@
+html body{
+    margin: 0;
+}
+
+.headerslider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .headerslider img {
+    width: 100%;
+    max-width: auto;
+    height: 740px;
+    display: none;
+    max-height: 50%;
+    position: relative;
+  }
+  
+  .headerslider img:first-child {
+    display: block;
+  }
+
+  .headerlogoRoca span{
+    letter-spacing: 1.2px;
+    position: absolute;
+    margin-top: -710px;
+    font-size: 40px;
+    margin-left: 52px;
+  }
+
+  #logoRoca{
+    color: #1A1A1A;
+  }
+
+  #logoRocaDot{
+    color: #0081FF;
+    margin-left: 140px;
+  }
+
+  .headerlogoResume{
+    position: absolute;
+    color: #B3B3B3;
+    font-size: 13px;
+    margin-top: -665px;
+    margin-left: 52px;
+  }
+
+  #logo01{
+    font-size: 158.3px;
+    color: #1C1C1C;
+    position: absolute;
+    margin-top: -750px;
+    margin-left: 1350px;
+  }
+
+  #logoAboutMe{
+   position: absolute;
+    color: #373737;
+    font-size: 43.17px;
+    margin-left: 1330px;
+    margin-top: -680px;
+  }
