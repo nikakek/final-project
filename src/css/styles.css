@@ -99,6 +99,60 @@ html body{
     padding-bottom: 3px;
     background-color: #E93656;
     margin-top: 10px;
-   
-    
+  }
+
+  .sectionAboutMe  {
+    display: inline-block;
+    width: auto;
+  }
+
+  .sectionAboutMe p {
+    max-width: 250px;
+  }
+
+  .sectionPhoto1{
+    display: inline-block;
+  }
+
+  .sectionStats{
+    display: inline-block;
+    width: 250px;
+    margin-left: 3%;
+  }
+
+  #aboutMeSection{
+    display: flex;
+    justify-content: center;
+  }
+
+  #designProccent{
+    width: 80%;
+    background-color: #E93656;
+    height: 5px;
+    display: inline-block;
+  }
+
+  #designProccentempty{
+    width: 18%;
+    background-color: green;
+    height: 5px;
+    display: inline-block;
+  }
+
+  #photographyProccent{
+      width: 65%;
+      background-color: #E93656;
+      height: 5px;
+  }
+
+  #markingProccent{
+    width: 50%;
+    background-color: #E93656;
+    height: 5px;
+  }
+
+  #photoshopProccent{
+    width: 30%;
+    background-color: #E93656;
+    height: 5px;
   }
