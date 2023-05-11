@@ -101,13 +101,46 @@ html body{
     margin-top: 10px;
   }
 
+  #aboutMeSection{
+    margin-top: 130px;
+  }
+
   .sectionAboutMe  {
     display: inline-block;
     width: auto;
+
   }
 
   .sectionAboutMe p {
     max-width: 250px;
+    padding-right: 50px;
+    text-align: end;
+  }
+
+  .sectionAboutMe h3{
+    text-align: end;
+    padding-right: 50px;
+    font-size: 14px;
+    color: #DAAE19;
+  }
+
+  .sectionAboutMe h2{
+    text-align: end;
+    padding-right: 50px;
+    font-size: 40px;
+
+  }
+
+  .sectionAboutMe a{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 50%;
+    margin-top: 60px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background-color: #E93656;
+    font-size: 15px;
+  
   }
 
   .sectionPhoto1{
@@ -118,6 +151,11 @@ html body{
     display: inline-block;
     width: 250px;
     margin-left: 3%;
+    margin-top: 20px;
+  }
+
+  .sectionStats div{
+    margin-top: 30px;
   }
 
   #aboutMeSection{
@@ -133,26 +171,78 @@ html body{
   }
 
   #designProccentempty{
-    width: 18%;
-    background-color: green;
+    width: 20%;
+    background-color: #F0F0F0;
     height: 5px;
     display: inline-block;
+    margin-left: -2%;
   }
 
   #photographyProccent{
       width: 65%;
       background-color: #E93656;
       height: 5px;
+      display: inline-block;
+  }
+
+  #photographyProccentempty{
+    width: 35%;
+    background-color: #F0F0F0;
+    height: 5px;
+    display: inline-block;
+    margin-left: -2%;
   }
 
   #markingProccent{
     width: 50%;
     background-color: #E93656;
     height: 5px;
+    display: inline-block;
+  }
+
+  #markingProccentempty{
+    width: 50%;
+    background-color: #F0F0F0;
+    height: 5px;
+    display: inline-block;
+    margin-left: -2%;
   }
 
   #photoshopProccent{
     width: 30%;
     background-color: #E93656;
     height: 5px;
+    display: inline-block;
+    
   }
+
+  #photoshopProccentempty{
+    width: 68%;
+    background-color: #F0F0F0;
+    height: 5px;
+    display: inline-block;
+    margin-left: -2%;
+  }
+
+  .clickButtons{
+    margin-top: 10px;
+    display: flex;
+  }
+
+  .clickButtons span{
+    background-color:#F9F9F9;
+    margin-left: 5px;
+    padding-top: 78px;
+  }
+  
+  .clickButtons  a{
+    text-decoration: none;
+    color: #6B6B6B;
+    padding: 10px;
+  }
+
+  .proccentPink{
+    color: #E93656;
+  }
+
+
