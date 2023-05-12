@@ -108,39 +108,34 @@ html body{
   .sectionAboutMe  {
     display: inline-block;
     width: auto;
-
   }
 
   .sectionAboutMe p {
-    max-width: 250px;
-    padding-right: 50px;
+    max-width: 330px;
     text-align: end;
+    display: flex;
   }
 
   .sectionAboutMe h3{
     text-align: end;
-    padding-right: 50px;
     font-size: 14px;
     color: #DAAE19;
   }
 
   .sectionAboutMe h2{
     text-align: end;
-    padding-right: 50px;
     font-size: 40px;
-
   }
 
   .sectionAboutMe a{
     text-decoration: none;
     display: inline-block;
-    margin-left: 50%;
-    margin-top: 60px;
+    margin-left: 240px;
+    margin-top: 30px;
     padding: 10px 20px;
     color: #FFFFFF;
     background-color: #E93656;
     font-size: 15px;
-  
   }
 
   .sectionPhoto1{
@@ -245,4 +240,8 @@ html body{
     color: #E93656;
   }
 
+  .sectionPhoto1 img{
+    padding-left: 50px;
+    padding-right: 20px;
+  }
 
