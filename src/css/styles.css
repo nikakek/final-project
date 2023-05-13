@@ -252,3 +252,50 @@ html body{
     padding-right: 20px;
   }
 
+  .contactContainer{
+    background-color: #131A36;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+
+  .phoneIcon{
+    background: #15263E;
+    outline: #F0F0F0;
+    outline-style: dashed;
+    padding: 17px;
+    border-radius: 30px;
+    transition-property: all;
+    transition-duration: 0.8s;
+  }
+
+  .phoneIcon:hover{
+    background-color: #E93656;
+    outline: none;
+  }
+
+  #phoneNumberText{
+    color: #F0F0F0;
+    font-size: 25px;
+  }
+
+  .phoneContainer{
+    display: flex;
+
+  }
+
+  #phoneNumber{
+    font-size: 14px;
+    color: #DFDFDF;
+  }
+
+  #phoneNumberInfo{
+    margin-left: 30px;
+  }
+
+ 
+
+
+  
