@@ -224,10 +224,17 @@ html body{
     display: flex;
   }
 
+  .clickButtons span:hover{
+    background-color: #15263E;
+  }
+
   .clickButtons span{
+    margin-top: 30px;
     background-color:#F9F9F9;
     margin-left: 5px;
-    padding-top: 78px;
+    padding: 10px 1px;
+    transition-property: all;
+    transition-duration: 0.8s;
   }
   
   .clickButtons  a{
