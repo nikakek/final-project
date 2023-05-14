@@ -25,3 +25,22 @@ links.forEach(link => {
     link.style.backgroundColor = "#15263E";
   });
 });
+
+
+
+
+
+
+var cards = document.getElementsByClassName('card');
+
+for (var i = 0; i < cards.length; i++) {
+    cards[i].addEventListener('mouseover', function () {
+        var paragraph = document.createElement('p');
+        paragraph.innerHTML = "New paragraph";
+        this.setAttribute('data-paragraph', paragraph.innerHTML);
+    });
+
+    cards[i].addEventListener('mouseout', function () {
+        this.removeAttribute('data-paragraph');
+    });
+}
