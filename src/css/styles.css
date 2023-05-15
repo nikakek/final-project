@@ -309,45 +309,37 @@ html body{
     margin-top: 203px;
   }
 
+  .row {
+    display: flex;
+  }
+  
   .card {
-    width: 200px;
+    width: 250px;
     height: 300px;
     border: 1px solid black;
     text-align: center;
-    cursor: pointer;
-    display: inline-block;
     margin: 10px;
     position: relative;
-}
-
-.card img {
+    overflow: hidden;
+  }
+  
+  .card img {
     max-width: 100%;
     max-height: 100%;
-}
-
-.card .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-.card:hover {
-    background: none;
-}
-
-.card:hover .text {
-    display: none;
-}
-
-.card:hover::after {
-    content: attr(data-paragraph);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
+  }
   
+  .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s;
+  }
+  
+  .card:hover .card-content {
+    opacity: 0;
+  }
+  
+  .card-content.hidden {
+    opacity: 0;
+  }

@@ -34,13 +34,105 @@ links.forEach(link => {
 var cards = document.getElementsByClassName('card');
 
 for (var i = 0; i < cards.length; i++) {
-    cards[i].addEventListener('mouseover', function () {
-        var paragraph = document.createElement('p');
-        paragraph.innerHTML = "New paragraph";
-        this.setAttribute('data-paragraph', paragraph.innerHTML);
-    });
+  cards[i].addEventListener('mouseover', function () {
+    var cardContent = this.getElementsByClassName('card-content')[0];
+    cardContent.classList.add('hidden');
+    
+    var heading = document.createElement('h2');
+    heading.innerHTML = 'New Heading ' + (this.getAttribute('data-index') || '');
+    
+    var paragraph = document.createElement('p');
+    paragraph.innerHTML = 'New Paragraph ' + (this.getAttribute('data-index') || '');
+    
+    // Custom texts for each card
+    if (this.id === 'card1') {
+      heading.innerHTML = 'Graphichs Design';
+      paragraph.innerHTML = 'Lorem ipm dolor amet, consecte adipiing lit Sunt sed ad possimus magm maiores.Ipsa dolor';
 
-    cards[i].addEventListener('mouseout', function () {
-        this.removeAttribute('data-paragraph');
-    });
+      heading.style.color = 'white';
+      heading.style.fontSize = '22px';
+      heading.style.marginTop = '100px';
+      paragraph.style.color = '#ECECEC';
+      paragraph.style.fontSize = '14px';
+      
+      
+      
+
+    } else if (this.id === 'card2') {
+      heading.innerHTML = 'Best Service';
+      paragraph.innerHTML = 'Lorem ipm dolor amet, consecte adipiing lit Sunt sed ad possimus magm maiores.Ipsa dolor';
+
+      heading.style.color = 'white';
+      heading.style.fontSize = '22px';
+      heading.style.marginTop = '100px';
+      paragraph.style.color = '#ECECEC';
+      paragraph.style.fontSize = '14px';
+    }else if (this.id === 'card3') {
+      heading.innerHTML = 'Best Service';
+      paragraph.innerHTML = 'Lorem ipm dolor amet, consecte adipiing lit Sunt sed ad possimus magm maiores.Ipsa dolor';
+
+      heading.style.color = 'white';
+      heading.style.fontSize = '22px';
+      heading.style.marginTop = '100px';
+      paragraph.style.color = '#ECECEC';
+      paragraph.style.fontSize = '14px';
+    }else if (this.id === 'card4') {
+      heading.innerHTML = 'Pixel Perfect';
+      paragraph.innerHTML = 'Lorem ipm dolor amet, consecte adipiing lit Sunt sed ad possimus magm maiores.Ipsa dolor';
+
+      heading.style.color = 'white';
+      heading.style.fontSize = '22px';
+      heading.style.marginTop = '100px';
+      paragraph.style.color = '#ECECEC';
+      paragraph.style.fontSize = '14px';
+    }else if (this.id === 'card5') {
+      heading.innerHTML = 'Unique Ideas';
+      paragraph.innerHTML = 'Lorem ipm dolor amet, consecte adipiing lit Sunt sed ad possimus magm maiores.Ipsa dolor';
+
+      heading.style.color = 'white';
+      heading.style.fontSize = '22px';
+      heading.style.marginTop = '100px';
+      paragraph.style.color = '#ECECEC';
+      paragraph.style.fontSize = '14px';
+    }else if (this.id === 'card6') {
+      heading.innerHTML = 'Design Analysis';
+      paragraph.innerHTML = 'Lorem ipm dolor amet, consecte adipiing lit Sunt sed ad possimus magm maiores.Ipsa dolor';
+
+      heading.style.color = 'white';
+      heading.style.fontSize = '22px';
+      heading.style.marginTop = '100px';
+      paragraph.style.color = '#ECECEC';
+      paragraph.style.fontSize = '14px';
+    }else if (this.id === 'card7') {
+      heading.innerHTML = 'Fully Managed';
+      paragraph.innerHTML = 'Lorem ipm dolor amet, consecte adipiing lit Sunt sed ad possimus magm maiores.Ipsa dolor';
+
+      heading.style.color = 'white';
+      heading.style.fontSize = '22px';
+      heading.style.marginTop = '100px';
+      paragraph.style.color = '#ECECEC';
+      paragraph.style.fontSize = '14px';
+    }else if (this.id === 'card8') {
+      heading.innerHTML = 'Helpful Support';
+      paragraph.innerHTML = 'Lorem ipm dolor amet, consecte adipiing lit Sunt sed ad possimus magm maiores.Ipsa dolor';
+
+      heading.style.color = 'white';
+      heading.style.fontSize = '22px';
+      heading.style.marginTop = '100px';
+      paragraph.style.color = '#ECECEC';
+      paragraph.style.fontSize = '14px';
+    }
+    // Add more conditions for other cards
+    
+    this.appendChild(heading);
+    this.appendChild(paragraph);
+  });
+
+  cards[i].addEventListener('mouseout', function () {
+    var cardContent = this.getElementsByClassName('card-content')[0];
+    cardContent.classList.remove('hidden');
+    
+    this.removeChild(this.lastElementChild);
+    this.removeChild(this.lastElementChild);
+  });
 }
