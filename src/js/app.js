@@ -149,3 +149,16 @@ for (var i = 0; i < cards.length; i++) {
     this.removeChild(this.lastElementChild);
   });
 }
+
+function showContent(photoUrl, text) {
+  var photo = document.getElementById('photo');
+  var recomendationText = document.getElementById('recomendationText');
+  var occupation = document.getElementById('occupation');
+  var name = document.getElementById('name');
+
+  photo.src = photoUrl;
+  recomendationText.innerText = text;
+
+  var content = document.getElementById('recomendationContent');
+  content.classList.remove('hidden');
+}

@@ -347,3 +347,51 @@ html body{
   .card-content h2{
     font-size: 17px;
   }
+
+  .recomendationsSection{
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+  }
+
+  #recomendationsBackground{
+    position: relative;
+    max-width: 100%;
+  }
+
+  #recomendation1{
+
+    max-width: 25%;
+  }
+
+  #recomendation1 p{
+    color: #FFFFFF;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+  }
+
+  .recomendationsContainer{
+    position: absolute;
+  }
+
+  #recomendationText{
+    width: 30%;
+    color: white;
+    font-size: 100%;
+  }
+
+  #recomendationContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #photo{
+    background: none;
+    outline-style: dashed;
+    outline-width: 0.1cm;
+    outline-color: white;
+    padding: 12px;
+    border-radius: 200px;
+    
+  }
