@@ -395,3 +395,38 @@ html body{
     border-radius: 200px;
     
   }
+
+
+
+
+
+
+
+  .button {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: black;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+}
+
+.buttonsPhoto {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.buttonsPhotosContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttonsPhotosContainer div {
+    width: 33.33%;
+    padding: 5px;
+}

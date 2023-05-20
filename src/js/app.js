@@ -135,7 +135,6 @@ for (var i = 0; i < cards.length; i++) {
       paragraph.style.width = '200px';
       paragraph.style.margin = 'auto';
     }
-    // Add more conditions for other cards
     
     this.appendChild(heading);
     this.appendChild(paragraph);
@@ -161,4 +160,32 @@ function showContent(photoUrl, text) {
 
   var content = document.getElementById('recomendationContent');
   content.classList.remove('hidden');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function showAll() {
+  var photos = document.getElementsByClassName("buttonsPhoto");
+  for (var i = 0; i < photos.length; i++) {
+      photos[i].style.opacity = "1";
+  }
+}
+
+function showPhoto(row, index) {
+  var photos = document.getElementsByClassName("buttonsPhoto");
+  for (var i = 0; i < photos.length; i++) {
+      photos[i].style.opacity = "0.5";
+  }
+  
+  var photoIndex = (row - 1) * 3 + index;
+  photos[photoIndex].style.opacity = "1";
 }
