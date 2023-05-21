@@ -393,36 +393,44 @@ html body{
     outline-color: white;
     padding: 12px;
     border-radius: 200px;
-    
   }
 
+#buttons{
+  background-color: #15263E;
+  padding: 30px;
+  
+}
 
+.button {
+  padding: 10px;
+  margin-bottom: 1px;
+  color: white;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+}
 
-
-
-
-
-  .button {
-    padding: 10px;
-    margin-bottom: 10px;
-    color: black;
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: block;
+button:hover{
+  margin-left: 2%;
 }
 
 .buttonsPhoto {
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  margin-left: 100px;
+}
+
+.buttonsPhoto img{
+  max-width: 200px;
 }
 
 .visible {
     opacity: 1;
 }
 
-.buttonsPhotosContainer {
-    display: flex;
+.buttonsPhotosContainer{
     flex-wrap: wrap;
 }
 
@@ -430,3 +438,24 @@ html body{
     width: 33.33%;
     padding: 5px;
 }
+
+#projects{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+#latestProjects{
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+
+#buttonsPhotosRow1{
+  display: flex;
+}
+
+#buttonsPhotosRow2{
+  display: flex;
+}
+
