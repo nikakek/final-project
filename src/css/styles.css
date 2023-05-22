@@ -9,9 +9,10 @@ html body{
   
   .headerslider img {
     width: 100%;
-    height: 740px;
+    height: 750px;
     display: none;
     position: relative;
+
   }
   
   .headerslider img:first-child {
@@ -55,7 +56,7 @@ html body{
   #logoAboutMe{
    position: absolute;
     color: #373737;
-    font-size: 43.17px;
+    font-size: 43.7px;
     margin-left: 84%;
     margin-top: -680px;
   }
@@ -259,6 +260,7 @@ html body{
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
+    max-width: 100%;
   }
 
   .phoneIcon{
@@ -398,12 +400,10 @@ html body{
 #buttons{
   background-color: #15263E;
   padding: 30px;
-  
 }
 
 .button {
   padding: 10px;
-  margin-bottom: 1px;
   color: white;
   border: none;
   background: none;
@@ -419,7 +419,7 @@ button:hover{
 .buttonsPhoto {
   opacity: 0.5;
   transition: opacity 0.3s ease;
-  margin-left: 100px;
+  margin-left: 89px;
 }
 
 .buttonsPhoto img{
@@ -430,10 +430,6 @@ button:hover{
     opacity: 1;
 }
 
-.buttonsPhotosContainer{
-    flex-wrap: wrap;
-}
-
 .buttonsPhotosContainer div {
     width: 33.33%;
     padding: 5px;
@@ -442,13 +438,15 @@ button:hover{
 #projects{
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 58px;
+  height: 320px;
 }
 
 #latestProjects{
   display: flex;
   justify-content: center;
   font-size: 60px;
+  margin-top: 210px;
 }
 
 #buttonsPhotosRow1{
@@ -457,5 +455,42 @@ button:hover{
 
 #buttonsPhotosRow2{
   display: flex;
+  margin-top: -24px;
 }
 
+.newsEvent{
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  margin-top: 270px;
+  color: #2ED279;
+}
+
+#latestEvents{
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  margin-top: -10px;
+
+}
+
+.graphicDesignCard{
+  background-color: #FAFAFA;
+}
+
+.graphicDesignCard h4{
+  letter-spacing: 1.12px;
+  color: #888888;
+  font-size: 12px;
+}
+
+.graphicDesignCard h3{
+  color: #161616;
+  font-size: 35px;
+}
+
+.graphicDesignCard p{
+  width: 29%;
+  font-size: 16px;
+  margin-top: 28px;
+}

@@ -162,17 +162,6 @@ function showContent(photoUrl, text) {
   content.classList.remove('hidden');
 }
 
-
-
-
-
-
-
-
-
-
-
-
 function showAll() {
   var photos = document.getElementsByClassName("buttonsPhoto");
   for (var i = 0; i < photos.length; i++) {
@@ -188,4 +177,19 @@ function showPhoto(row, index) {
   
   var photoIndex = (row - 1) * 3 + index;
   photos[photoIndex].style.opacity = "1";
+}
+
+var buttonsColor = document.getElementsByClassName('button');
+var activeButton = null;
+
+for (var i = 0; i < buttonsColor.length; i++) {
+  buttonsColor[i].addEventListener('click', function() {
+   
+    if (activeButton) {
+      activeButton.style.color = '';
+    }
+
+    this.style.color = '#E93656';
+    activeButton = this;
+  });
 }
