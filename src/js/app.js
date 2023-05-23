@@ -193,3 +193,18 @@ for (var i = 0; i < buttonsColor.length; i++) {
     activeButton = this;
   });
 }
+
+var activeSquare = null;
+var squares = document.getElementsByClassName('square');
+for (var i = 0; i < squares.length; i++) {
+  squares[i].addEventListener('click', function() {
+    if (activeSquare !== null) {
+      activeSquare.classList.remove('active');
+      activeSquare.querySelector('.square-content').style.display = 'none';
+    }
+
+  this.classList.add('active');
+  this.querySelector('.square-content').style.display = 'block';
+  activeSquare = this;
+  });
+}
