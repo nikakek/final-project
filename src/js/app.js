@@ -27,8 +27,37 @@ links.forEach(link => {
 });
 
 
+window.addEventListener("scroll", updateProgressBars);
 
+function updateProgressBars() {
+  var designProgress = document.getElementById("designProccent");
+  var photographyProgress = document.getElementById("photographyProccent");
+  var markingProgress = document.getElementById("markingProccent");
+  var photoshopProgress = document.getElementById("photoshopProccent");
 
+  var windowHeight = window.innerHeight;
+  var scrollPosition = window.scrollY || window.pageYOffset;
+
+  var designOffsetTop = designProgress.offsetTop;
+  var photographyOffsetTop = photographyProgress.offsetTop;
+  var markingOffsetTop = markingProgress.offsetTop;
+  var photoshopOffsetTop = photoshopProgress.offsetTop;
+
+  var designProgressWidth = (scrollPosition + windowHeight >= designOffsetTop) ? 80 : 0;
+  var photographyProgressWidth = (scrollPosition + windowHeight >= photographyOffsetTop) ? 65 : 0;
+  var markingProgressWidth = (scrollPosition + windowHeight >= markingOffsetTop) ? 50 : 0;
+  var photoshopProgressWidth = (scrollPosition + windowHeight >= photoshopOffsetTop) ? 30 : 0;
+
+  designProgress.style.width = designProgressWidth + "%";
+  photographyProgress.style.width = photographyProgressWidth + "%";
+  markingProgress.style.width = markingProgressWidth + "%";
+  photoshopProgress.style.width = photoshopProgressWidth + "%";
+
+  designProgress.style.transition = "width 0.5s ease";
+  photographyProgress.style.transition = "width 0.5s ease";
+  markingProgress.style.transition = "width 0.5s ease";
+  photoshopProgress.style.transition = "width 0.5s ease";
+}
 
 
 var cards = document.getElementsByClassName('card');
@@ -208,3 +237,32 @@ for (var i = 0; i < squares.length; i++) {
   activeSquare = this;
   });
 }
+
+
+const form = document.getElementById('contactSign');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const formData = new FormData(form);
+  const params = new URLSearchParams(formData);
+
+  fetch(form.action, {
+    method: 'POST',
+    body: params
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.status === 1) {
+      alert("Thank you for getting in touch! We appreciate you contacting us.");
+    } else {
+      alert("There was an error while sending your message. Please try again later.");
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert("There was an error while sending your message. Please try again later.");
+  });
+});
+
+
